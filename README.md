@@ -54,3 +54,21 @@ ORDER BY rt.emp_no, rt.to_date desc;
 - A breakdown of mentors by title:
  
  ![mentortitles](/Data/mentor_titles.png)
+ 
+ ## Summary
+ Using a combination of temp tables, joins, count /group by and distinct on SQL queries it is apparent that the company is expecting an almost 30% reduction in staff due to the upcoming retirements.
+  - There are 240,124 total active employees
+    ```
+       SELECT COUNT(e.emp_no)
+       FROM employees e
+       LEFT JOIN dept_emp as de
+       ON e.emp_no = de.emp_no
+       WHERE de.to_date = ('9999-01-01');
+       ```
+    - Compared to the 74,458 potential retirees and 1549 potential mentors.
+ - The 30% rate is fairly consistent across departments
+ 
+ ![DepartmentStats](/Data/percentages_by_dept.png)
+ 
+ - From the chart above you can see that the number of mentors per department compared to the number of soon to be open positions is small.  With the current projections each mentor would need to work with between 37 and 50 new hires.  This isn't sustainable.
+- Recommendation would be for HR and Recruiting teams to step up the hiring process as soon as possible, and extend the mentorship pool.
