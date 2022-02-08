@@ -3,7 +3,7 @@ Module 7 - Employee database - data modeling, engineering and data analysis.
 
 A fictional Human Resources Department at Pewlett Hackard is preparing for several retirements.  Using SQL, this analysis determines the number of retiring employees per title. It also identifies employees that are eligible to participate in a mentorship program so that management and HR can prepare for the upcoming wave of vacancies in the "silver tsunami". 
 
-Additionally, more complex SQL analysis is used to perform the percentage of retirees per department and number of potential mentors to potential new hires.
+Additionally, more complex SQL analysis is used to perform the percentage of retirees per department and the ratio of potential mentors to potential new hires.
 
 ## Overview
 
@@ -70,5 +70,5 @@ ORDER BY rt.emp_no, rt.to_date desc;
  
  ![DepartmentStats](/Data/percentages_by_dept.png)
  
- - From the chart above you can see that the number of mentors per department compared to the number of soon to be open positions is small.  With the current projections each mentor would need to work with between 37 and 50 new hires.  This isn't sustainable.
+ - From the chart above you can see that the number of mentors per department compared to the number of soon to be open positions is small.  With the current projections each mentor would need to work with between 37 and 50 new hires.  There won't be enough mentors to work with the new hires.
 - Recommendation would be for HR and Recruiting teams to step up the hiring process as soon as possible, and extend the mentorship pool.
