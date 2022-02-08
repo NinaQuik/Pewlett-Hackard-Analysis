@@ -15,7 +15,7 @@ Additionally, more complex SQL analysis is used to perform the percentage of ret
 ### Data Set
 Six .csv files imported via pgAdmin to create a PH-Employee-DB database in Postgres.
 
-ERD Diagram:
+Entity Relationship Diagram:
 
 ![ERD](/Data/ERD.png)
 
@@ -71,4 +71,5 @@ ORDER BY rt.emp_no, rt.to_date desc;
  ![DepartmentStats](/Data/percentages_by_dept.png)
  
  - From the chart above you can see that the number of mentors per department compared to the number of soon to be open positions is small.  With the current projections each mentor would need to work with between 37 and 50 new hires.  There won't be enough mentors to work with the new hires.
+ - The majority of the soon to be retirees held senior positions. 25,916 Senior Engineers and 24,926 Senor Staff. This implies that the company will be losing many de facto existing mentors as well.
 - Recommendation would be for HR and Recruiting teams to step up the hiring process as soon as possible, and extend the mentorship pool.
